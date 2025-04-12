@@ -1,10 +1,10 @@
 <?php
 return [
     "host" => 'localhost',
-    "user" => 'mil',
-    "pass" => '12345',
-    "db_name" => 'php_mvc_db',
+    "user" => 'root',
+    "pass" => 'Mamao@123',
+    "db_name" => 'notas',
     "subdirectory" => "",
-    "app_url" => 'http://localhost/',
-    "public_url" => "http://localhost/public/"
+    "app_url" => 'http://localhost:8080/',
+    "public_url" => "http://localhost:8080/public/"
 ];
