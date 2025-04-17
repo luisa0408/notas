@@ -64,4 +64,8 @@ function abort($Code = 404)
 
     exit();
 }
+function pr($dados){
+    echo "<pre>";
+    print_r($dados);die;
+}
 
