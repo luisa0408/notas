@@ -14,10 +14,14 @@ class Notas extends \Core\BaseController{
         view('notas/exibir' , ['notas'=>$notas, 'texto'=>'luisa']);
 
     }
+    function exibirCadastro () {
+        view('notas/form_cadastrar');
+
+    }
     function cadastrarNotas (){
         $cadastrarNotas = new ModelNotas;
         $cadastrar = $cadastrarNotas->criarNota();
-        view('notas/cadastrar', ['$cadastrar'=>$cadastrar]);
+        view('notas/cadastrar', ['cadastrar'=>$cadastrar]);
     }
 
 }

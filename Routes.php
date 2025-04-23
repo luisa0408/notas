@@ -22,6 +22,13 @@ return [
         'method' => 'exibirNotas'
     ],
     [
+        "url" => "/notas/form_cadastrar",
+        "name" => "exibir-cadastro",
+        'controller' => \Controllers\Notas::class,
+        'method' => 'exibirCadastro'
+    ],
+
+    [
         "url" => "/notas/cadastrar",
         "name" => "cadastrar-notas",
         'controller' => \Controllers\Notas::class,
