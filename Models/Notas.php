@@ -10,5 +10,10 @@ class Notas extends Model{
         $sql= "SELECT * FROM notas";
         return $this->SelectRow($sql);
     }
+    public function criarNota()
+    {
+        $sql= "INSERT INTO notas (id, titulo, descricao) VALUES (id, 'titulo', 'descricao')";
+        return $this->SelectRow($sql);
+    }
     
 }

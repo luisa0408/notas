@@ -21,6 +21,12 @@ return [
         'controller' => \Controllers\Notas::class,
         'method' => 'exibirNotas'
     ],
+    [
+        "url" => "/notas/cadastrar",
+        "name" => "cadastrar-notas",
+        'controller' => \Controllers\Notas::class,
+        'method' => 'cadastrarNotas'
+    ],
 
 
 ];
