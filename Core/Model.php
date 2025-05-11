@@ -38,6 +38,12 @@ class Model
         unset($conn);
     }
 
+    public function query($sql){
+        $conn = $this->Connect();
+        $conn->exec($sql);
+        
+    }
+
     /**
      * @param string $sql
      * @param array $value

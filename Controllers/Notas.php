@@ -20,8 +20,10 @@ class Notas extends \Core\BaseController{
     }
     function cadastrarNotas (){
         $cadastrarNotas = new ModelNotas;
-        $cadastrar = $cadastrarNotas->criarNota();
-        view('notas/cadastrar', ['cadastrar'=>$cadastrar]);
+        $cadastrarNotas->titulo = $_POST['titulo'];
+        $cadastrarNotas->descricao = $_POST['descricao'];
+        $cadastrarNotas->criarNota();
+        header('Location: /notas/exibir');
     }
 
 }
