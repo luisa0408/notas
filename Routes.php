@@ -4,12 +4,6 @@
 return [
 
     [
-        "url" => "/",
-        "name" => "index",
-        'controller' => \Controllers\Index::class,
-        'method' => 'index'
-    ],
-    [
         "url" => "/notas/teste",
         "name" => "notas",
         'controller' => \Controllers\Notas::class,
