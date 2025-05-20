@@ -28,6 +28,13 @@ return [
         'controller' => \Controllers\Notas::class,
         'method' => 'cadastrarNotas'
     ],
+    [
+        "url" => "/notas/deletar",
+        "name" => "deletar-notas",
+        'controller' => \Controllers\Notas::class,
+        'method' => 'deletarNota'
+    ],
 
 
 ];
+

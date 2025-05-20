@@ -18,5 +18,9 @@ class Notas extends Model{
         $sql= "INSERT INTO notas (titulo, descricao) VALUES ('{$this->titulo}', '{$this->descricao}')";
         return $this->query($sql);
     }
+    public function deletarNota($id){
+        $sql = "DELETE FROM notas WHERE id = $id";
+        return $this->query($sql);
+    }
     
 }

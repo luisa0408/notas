@@ -25,6 +25,15 @@ class Notas extends \Core\BaseController{
         $cadastrarNotas->criarNota();
         header('Location: /notas/exibir');
     }
+    function deletarNotas (){
+        $deletarNotas = new ModelNotas;
+        $deletarNotas->id = $_POST['id'];
+        $deletarNotas->deletarNota($id);
+        header('Location: /notas/exibir');
+        exit;
+
+
+    }
 
 }
 
