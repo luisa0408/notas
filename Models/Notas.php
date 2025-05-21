@@ -22,5 +22,9 @@ class Notas extends Model{
         $sql = "DELETE FROM notas WHERE id = '$id'";
         return $this->query($sql);
     }
+    public function buscarUmaNota($id){
+        $sql= "SELECT * FROM notas where id = '$id'";
+        return $this->SelectRow($sql)[0];
+    }
     
 }

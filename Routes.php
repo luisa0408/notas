@@ -34,6 +34,12 @@ return [
         'controller' => \Controllers\Notas::class,
         'method' => 'deletarNotas'
     ],
+    [
+        "url" => "/notas/editar",
+        "name" => "editar-notas",
+        'controller' => \Controllers\Notas::class,
+        'method' => 'editarNotas'
+    ],
 
 
 ];

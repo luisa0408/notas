@@ -11,7 +11,7 @@ class Notas extends \Core\BaseController{
     function exibirNotas () {
         $exibirNotas = new ModelNotas;
         $notas = $exibirNotas->buscarNotas();
-        view('notas/exibir' , ['notas'=>$notas, 'texto'=>'luisa']);
+        view('notas/exibir' , ['notas'=>$notas]);
 
     }
     function exibirCadastro () {
@@ -32,6 +32,12 @@ class Notas extends \Core\BaseController{
         die;
 
 
+    }
+
+    function editarNotas(){
+        $exibirNotas = new Modelnotas;
+        $notaUnica =  $exibirNotas->buscarUmaNota($_GET['id']);
+        view('notas/form_cadastrar', ['nota'=>$notaUnica]);
     }
 
 }

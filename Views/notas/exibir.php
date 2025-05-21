@@ -20,7 +20,7 @@
 		echo "<td>" . $nota['titulo'] . "</td>";
 		echo "<td>" . $nota['descricao'] . "</td>";
     echo '<td><a href="/notas/deletar?id='.$nota['id'].'" type="button" class="btn btn-danger">Excluir</a>
-          <a type="button" class="btn btn-primary">Editar</a></td>';
+          <a  href="/notas/editar?id='.$nota['id'].'" type="button" class="btn btn-primary">Editar</a></td>';
 
 		echo "</tr>";
 	}
