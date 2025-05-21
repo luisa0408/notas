@@ -32,7 +32,7 @@ return [
         "url" => "/notas/deletar",
         "name" => "deletar-notas",
         'controller' => \Controllers\Notas::class,
-        'method' => 'deletarNota'
+        'method' => 'deletarNotas'
     ],
 
 

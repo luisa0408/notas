@@ -8,31 +8,25 @@
       <th scope="col">ID</th>
       <th scope="col">Titulo</th>
       <th scope="col">Descrição</th>
+      <th scope="col">Ações</th>
     </tr>
   </thead>
   <tbody>
 
   <?php
 	foreach ($notas as $nota) { 
-		echo "<tr>";?>
-<td>
-  <input type="checkbox" name="checkbox[]" value="<?= $nota['id'] ?>"> 
-</td>
-
-<?php
+		echo "<tr>";
 		echo "<th scope='row'>" . $nota['id'] . "</th>";
 		echo "<td>" . $nota['titulo'] . "</td>";
 		echo "<td>" . $nota['descricao'] . "</td>";
+    echo '<td><a href="/notas/deletar?id='.$nota['id'].'" type="button" class="btn btn-danger">Excluir</a>
+          <a type="button" class="btn btn-primary">Editar</a></td>';
+
 		echo "</tr>";
 	}
 ?>
   </tbody>
 </table>
-<div class="text-center">
-  <button type="submit" onclick="location.href='/notas/deletar';" class="btn btn-danger">Deletar</button>
-  <button type="button" onclick="location.href='/notas/deletar';" class="btn btn-primary">Editar</button>
-  <button type="button" onclick="location.href='form_cadastrar';" class="btn btn-primary">Cadastrar Nota</button>
-</div>
 
 
 

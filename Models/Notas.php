@@ -19,7 +19,7 @@ class Notas extends Model{
         return $this->query($sql);
     }
     public function deletarNota($id){
-        $sql = "DELETE FROM notas WHERE id = $id";
+        $sql = "DELETE FROM notas WHERE id = '$id'";
         return $this->query($sql);
     }
     

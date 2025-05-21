@@ -27,16 +27,12 @@ class Notas extends \Core\BaseController{
     }
     function deletarNotas (){
         $deletarNotas = new ModelNotas;
-        $deletarNotas->id = $_POST['id'];
-        $deletarNotas->deletarNota($id);
+        $deletarNotas->deletarNota($_GET['id']);
         header('Location: /notas/exibir');
-        exit;
+        die;
 
 
     }
 
 }
-
-
-
 
